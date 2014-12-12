@@ -1,14 +1,24 @@
 <?php
 include_once('lib/library.php');
 
-print_r($_SESSION);
+//print_r($_SESSION);
 ?>
 
 <html>
-<head>All Students</head>
+<head>
+    <title>All Students</title>
+    <meta charset="utf-8">
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Include bootstrap stylesheets -->
+    <link rel="stylesheet" href="lib/bootstrap.css">
+</head>
 <body>
-<div>
-    <table border="1">
+<div class="container">
+    <h2>Students</h2>
+    <p>All students:</p>
+    <div class="table-responsive">
+    <table class="table table-striped table-bordered">
     <thead>
         <tr>
             <th>SL#</th>
@@ -32,8 +42,15 @@ print_r($_SESSION);
             <?php
             foreach ($student_keys as $k1 => $v1) {
                 echo '<td>';
-                if(isset($_SESSION[$student_store][$i][$k1]))
-                echo $_SESSION[$student_store][$i][$k1];
+                if(isset($_SESSION[$student_store][$i][$k1])) {
+                    if($_SESSION[$student_store][$i][$k1] == $k1)
+                    {
+                        echo 'Yes';
+                    }
+                    else {
+                        echo $_SESSION[$student_store][$i][$k1];
+                    }
+                }
                 echo '</td>';
             }
             ?>
@@ -47,6 +64,7 @@ print_r($_SESSION);
     ?>
 </tbody>
 </table>
+    </div>
 <a href="create.php">Create New Student Record</a>
 </div>
 
