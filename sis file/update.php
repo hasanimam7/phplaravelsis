@@ -2,7 +2,7 @@
 include_once('lib/library.php');
 $modifyindex = getIndex();
 $modifyItem = getModifyDetail($modifyindex);
-print_r($modifyItem);
+//print_r($modifyItem);
 ?>
 
 <html>
