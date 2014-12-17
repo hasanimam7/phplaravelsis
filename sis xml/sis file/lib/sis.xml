@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<students>
+    <studentstore student_id="1">
+        <student_fname>Hasan Imam</student_fname>
+        <student_lname>Mohammod</student_lname>
+        <student_address>Uttara</student_address>
+        <student_email>hasan@yahoo.com</student_email>
+        <student_mphone></student_mphone>
+        <student_dob>1985-8-15</student_dob>
+        <student_gender></student_gender>
+        <student_mstatus></student_mstatus>
+        <student_degree></student_degree>
+        <student_hobby_reading></student_hobby_reading>
+        <student_hobby_movie></student_hobby_movie>
+        <student_hobby_travel></student_hobby_travel>
+        <student_hobby_playing></student_hobby_playing>
+    </studentstore>
+
+    <studentstore student_id="2">
+        <student_fname>Rakibul Hasan</student_fname>
+        <student_lname>Md.</student_lname>
+        <student_address>Nikunja</student_address>
+        <student_email>raju@gmail.com</student_email>
+        <student_mphone></student_mphone>
+        <student_dob>1986-4-15</student_dob>
+        <student_gender></student_gender>
+        <student_mstatus></student_mstatus>
+        <student_degree></student_degree>
+        <student_hobby_reading></student_hobby_reading>
+        <student_hobby_movie></student_hobby_movie>
+        <student_hobby_travel></student_hobby_travel>
+        <student_hobby_playing></student_hobby_playing>
+    </studentstore>
+</students>
